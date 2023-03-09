@@ -1,0 +1,13 @@
+:root {
+    --green-loud: #13FF00;
+    --gray-loud: #191919;
+}
+
+html, body {
+    font-family: "Karla", sans-serif;
+}
+
+.tussilago {
+    font-family: "tussilago", sans-serif;
+}
+
