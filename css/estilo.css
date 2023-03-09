@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin:0px;
+}
+
+body {
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Creepster', cursive;
+}
+ul li {
+	display:inline-block;
+	float:right;
+	margin: 10px;
+ 
+}
+a {
+	text-decoration:none;
+	color: #25F503;
+	font-size:20px;	
+}
+
+a:hover {
+	color: rgb(68, 0, 255);	
+}
+
+/* estilo do cabeçalho */
+.header {
+  background-color:#F502AA;
+  padding: 20px;
+  width:100%;
+  text-align: center;
+  font-family: 'Aboreto', cursive;
+  font-size: 60px;
+  text-shadow: 4px 4px 4px #aaa;
+  color: #25F503;
+
+  
+}
+
+#logo {
+  /*background-color: #fff;*/
+  padding:0px;
+  width:120px;
+  height: 100px;
+  display:inline-block;
+  float:left;
+  margin-top:auto;
+  padding-bottom: 0px;
+}
+#topo {
+  /*background-color: #fff;*/
+  padding: 10px;
+  width:600px;
+  height: 50px;
+  display:inline-block;
+  float:right;
+  margin-top:auto;
+}
+
+/* Crie três colunas desiguais que flutuam uma ao lado da outra */
+.column {
+  float: left;
+  padding: 20px;
+  height: 500px; 
+}
+
+/* Colunas gerais */
+.column.geral {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 150px;
+}
+/* Colunas laterais */
+.column.side {
+  width: 25%;
+}
+
+/* Coluna do meio */
+.column.middle {
+  width: 50%;
+}
+
+/* Limpar flutuações após as colunas */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* estilo do rodapé */
+.footer {
+  background-color:#F502AA;
+  padding: 10px;
+  text-align: center;
+  color: #25F503;
+  
+}
+.class{
+  height: 100%;
+  width: 100%;
+}
+.foto {
+  padding:0px;
+  margin:0px;
+  width:100%; height:100%;
+  display:inline-block;
+}
+
+.foto1 {
+  background-color: #eee;
+  padding: 0px;
+  margin-left:10px; margin-top: 10px;
+  width:200px; height:450px;
+  display:inline-block;
+  float:left;
+}
+.foto1.texto {
+  background-color: #fff;
+  padding: 10px;
+  margin-left:10px; margin-top: 10px;
+  width:200px; height:450px;
+  display:inline-block;
+  float:left;
+}
+.foto2 {
+  background-color: #eee;
+  padding: 0px;
+  margin-left:10px; margin-top: 5px;
+  width:400px; height:400px;
+  float:left;
+}
+.foto2.texto {
+  background-color: #fff;
+  padding: 10px;
+  margin-left:10px; margin-top: 5px;
+  width:400px; height:50px;
+  float:left;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Layout Responsivo */
+@media (max-width: 600px) {
+  header, .column.side, .column.middle, .column.geral {
+    width: 100%;
+  }
+  .foto{
+	  
+  }
+  .foto1, .foto1.texto {
+	  width:260px;
+  }
+  .foto2, .foto2.texto {
+	  width:520px;
+  }
+
+}
