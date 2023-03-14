@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./index.js" async></script>
     <title>LOUD</title>
     <link rel="icon" type="image/x-icon" href="imagens/favicon.ico" />
   </head>
@@ -76,20 +77,5 @@
         </div>
       </footer>
     </div>
-
-    <script async>
-      const defaultPaths = [
-        { key: "/index.html", value: "INÍCIO" },
-        { key: "/about.html", value: "SOBRE" },
-        { key: "/gallery.html", value: "GALERIA" },
-        { key: "/contact.html", value: "CONTATO" },
-      ]
-      const currentPathName = window.location.pathname
-      const currentPageData = defaultPaths.find((defaultPathName) => defaultPathName.key === currentPathName)
-      const navBar = Array.from(document.getElementById("navBar").querySelectorAll("a"))
-      const currentNavItem = navBar.find((link) => link.innerText === currentPageData.value)
-      currentNavItem.classList.remove("hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
-      currentNavItem.classList.add("bg-[var(--green-loud)]", "text-[black]", "hover:bg-[transparent]", "hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
-    </script>
   </body>
 </html>
