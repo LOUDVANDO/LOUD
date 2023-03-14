@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/tnm8bzr.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>LOUD</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset=" utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/tnm8bzr.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <title>LOUD</title>
-  <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
-</head>
+  <body class="bg-[black] text-[white] relative">
+    <div class="h-screen flex flex-col">
+      <!------------------- início nav bar -->
+      <div id="inicio" class="px-6 w-full">
+        <header class="py-2 pr-1 border-b border-[white]/60 flex justify-between">
+          <img src=" ./imagens/loud.svg" alt="Loud Logotivo" />
+          <nav id="navBar" class="flex gap-4">
+            <a href="./index.html" class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Início</a>
+            <a href="./about.html" class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Sobre</a>
+            <a href="./gallery.html" class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Galeria</a>
+            <a href="./contact.html" class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Contato</a>
+          </nav>
+        </header>
+      </div>
+      <!----------- fim do nav bar -->
 
-<body class="bg-[black] text-[white] relative">
-  <div class="h-screen flex flex-col">
-    <!------------------- início nav bar -->
-    <div id="inicio" class="px-6 w-full">
-      <header class="py-2 pr-1 border-b border-[white]/60 flex justify-between">
-        <img src=" ./imagens/loud.svg" alt="Loud Logotivo">
-        <div class="flex gap-4">
-          <a href="./index.html"
-            class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Início</a>
-          <a href="./about.html"
-            class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Sobre</a>
-          <a href="./gallery.html"
-            class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Galeria</a>
-          <a href="./contact.html"
-            class="font-[tussilago] uppercase px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Contato</a>
+      <header class="p-6 w-full relative">
+        <div class="px-6 py-20 w-full max-w-screen-xl mx-auto grid place-content-center bg-[url('https://images.prismic.io/loud/38c8a942-3d68-478d-af2a-242fce96b6a4_loud_header_about.jpg?auto=compress,format')] bg-cover">
+          <h1 class="tussilago font-extrabold text-5xl uppercase text-center drop-shadow-2xl [-webkit-text-stroke:1px_var(--green-loud)] text-transparent relative z-30">
+            Nós somos a
+            <br />
+            <span class="text-[var(--green-loud)] text-9xl">Loud!</span>
+          </h1>
         </div>
+        <div class="absolute inset-0 bg-[var(--gray-loud)] mix-blend-multiply z-10 opacity-60"></div>
       </header>
-    </div>
-    <!----------- fim do nav bar -->
 
-    <header class=" p-6 w-full relative">
-      <div
-        class="px-6 py-20 w-full max-w-screen-xl mx-auto grid place-content-center bg-[url('https://images.prismic.io/loud/38c8a942-3d68-478d-af2a-242fce96b6a4_loud_header_about.jpg?auto=compress,format')] bg-cover">
-        <h1
-          class="tussilago font-extrabold text-5xl uppercase text-center drop-shadow-2xl [-webkit-text-stroke:1px_var(--green-loud)] text-transparent relative z-30">
-          Nós somos a
-          <br /> <span class="text-[var(--green-loud)] text-9xl">Loud!</span>
-        </h1>
-      </div>
-      <div class='absolute inset-0 bg-[var(--gray-loud)] mix-blend-multiply z-10 opacity-60'></div>
-    </header>
-
-    <div class='flex-1 px-6 py-10 flex flex-col gap-10 min-h-content'>
-      <div class='w-full max-w-screen-xl mx-auto text-xl flex gap-6 opacity-60'>
-        <p>
-          Somos uma organização de esports e uma companhia de lifestyle fundada em 2019 por criadores de conteúdo,
-          desenvolvedores e experts em Marketing Digital. Acreditamos que as pessoas são as novas marcas, e é através de
-          histórias sendo bem contadas que pessoas tocam o coração e o imaginário do público.
-        </p>
-        <p>
-          Nascemos do desejo de fazer diferente as coisas que todo mundo fazia. Investimos nisso, trabalhamos duro,
-          trouxemos pessoas talentosas e dedicadas para compartilhar esse sonho conosco, e seguimos com confiança e sem
-          medo para realizar os nossos sonhos e os de quem vem com a gente.
-        </p>
-      </div>
-
-      <div>
-        <h2 class="tussilago font-bold text-center text-6xl text-[var(--green-loud)] uppercase"><span
-            class='[-webkit-text-stroke:1px_var(--green-loud)] text-transparent'>#</span>goLOUD</h2>
-      </div>
-    </div>
-
-    <footer class='w-full bg-[var(--gray-loud)] px-6 pb-10'>
-      <div class="max-w-screen-xl mx-auto flex flex-col gap-6">
-        <hr class=" w-full border-t border-[white]/60 m-0">
-        <div class='flex justify-between'>
-          <img src="./imagens/loud.svg" alt="Loud Logotipo">
-
-          <div class='text-2xl flex gap-1'>
-            <a href="https://www.youtube.com/@LOUDgg/" target="_blank"
-              class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i
-                class="ph ph-youtube-logo"></i></a>
-            <a href="https://www.facebook.com/loud/" target="_blank"
-              class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i
-                class="ph ph-facebook-logo"></i></a>
-            <a href="https://www.instagram.com/loudgg/" target="_blank"
-              class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i
-                class="ph ph-instagram-logo"></i></a>
-            <a href="https://twitter.com/LOUDgg" target="_blank"
-              class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i
-                class="ph ph-twitter-logo"></i></a>
-            <a href="https://discord.com/invite/loud" target="_blank"
-              class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i
-                class="ph ph-twitch-logo"></i></a>
-          </div>
+      <div class="flex-1 px-6 py-10 flex flex-col gap-10 min-h-content">
+        <div class="w-full max-w-screen-xl mx-auto text-xl flex gap-6 opacity-60">
+          <p>
+            Somos uma organização de esports e uma companhia de lifestyle fundada em 2019 por criadores de conteúdo, desenvolvedores e experts em Marketing Digital. Acreditamos que as pessoas são as novas marcas, e é através de histórias sendo bem contadas que
+            pessoas tocam o coração e o imaginário do público.
+          </p>
+          <p>
+            Nascemos do desejo de fazer diferente as coisas que todo mundo fazia. Investimos nisso, trabalhamos duro, trouxemos pessoas talentosas e dedicadas para compartilhar esse sonho conosco, e seguimos com confiança e sem medo para realizar os nossos
+            sonhos e os de quem vem com a gente.
+          </p>
         </div>
-        <p class='tussilago opacity-60 font-bold w-full text-center'>&copy; TODOS OS DIREITOS RESERVADOS Á LOUD
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
 
+        <div>
+          <h2 class="tussilago font-bold text-center text-6xl text-[var(--green-loud)] uppercase"><span class="[-webkit-text-stroke:1px_var(--green-loud)] text-transparent">#</span>goLOUD</h2>
+        </div>
+      </div>
+
+      <footer class="w-full bg-[var(--gray-loud)] px-6 pb-10">
+        <div class="max-w-screen-xl mx-auto flex flex-col gap-6">
+          <hr class="w-full border-t border-[white]/60 m-0" />
+          <div class="flex justify-between">
+            <img src="./imagens/loud.svg" alt="Loud Logotipo" />
+
+            <div class="text-2xl flex gap-1">
+              <a href="https://www.youtube.com/@LOUDgg/" target="_blank" class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i class="ph ph-youtube-logo"></i></a>
+              <a href="https://www.facebook.com/loud/" target="_blank" class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i class="ph ph-facebook-logo"></i></a>
+              <a href="https://www.instagram.com/loudgg/" target="_blank" class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i class="ph ph-instagram-logo"></i></a>
+              <a href="https://twitter.com/LOUDgg" target="_blank" class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i class="ph ph-twitter-logo"></i></a>
+              <a href="https://discord.com/invite/loud" target="_blank" class="p-2 flex items-center justify-center border rounded-full border-[transparent] hover:border-[white]/10 hover:text-[var(--green-loud)]"><i class="ph ph-twitch-logo"></i></a>
+            </div>
+          </div>
+          <p class="tussilago opacity-60 font-bold w-full text-center">&copy; TODOS OS DIREITOS RESERVADOS Á LOUD</p>
+        </div>
+      </footer>
+    </div>
+
+    <script async>
+      const defaultPaths = [
+        { key: "/index.html", value: "INÍCIO" },
+        { key: "/about.html", value: "SOBRE" },
+        { key: "/gallery.html", value: "GALERIA" },
+        { key: "/contact.html", value: "CONTATO" },
+      ]
+      const currentPathName = window.location.pathname
+      const currentPageData = defaultPaths.find((defaultPathName) => defaultPathName.key === currentPathName)
+      const navBar = Array.from(document.getElementById("navBar").querySelectorAll("a"))
+      const currentNavItem = navBar.find((link) => link.innerText === currentPageData.value)
+      currentNavItem.classList.remove("hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
+      currentNavItem.classList.add("bg-[var(--green-loud)]", "text-[black]", "hover:bg-[transparent]", "hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
+    </script>
+  </body>
 </html>

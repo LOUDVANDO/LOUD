@@ -18,7 +18,7 @@
     <div id="inicio" class="px-6 w-full">
       <header class="py-2 pr-1 border-b border-[white]/60 flex justify-between">
         <img src=" ./imagens/loud.svg" alt="Loud Logotipo" />
-        <nav class="flex gap-4 font-[tussilago] uppercase">
+        <nav id="navBar" class="flex gap-4 font-[tussilago] uppercase">
           <a href="./index.html" class="px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Início</a>
           <a href="./about.html" class="px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Sobre</a>
           <a href="./gallery.html" class="px-4 py-2 border border-transparent hover:border-[var(--green-loud)] rounded-full hover:text-[var(--green-loud)] transition-colors">Galeria</a>
@@ -109,5 +109,20 @@
     </footer>
 
     <a href="#inicio" class="p-4 w-fit grid place-content-center rounded-full bg-[var(--green-loud)] text-[black] text-2xl absolute bottom-10 left-6"><i class="ph ph-arrow-up"></i></a>
+
+    <script async>
+      const defaultPaths = [
+        { key: "/index.html", value: "INÍCIO" },
+        { key: "/about.html", value: "SOBRE" },
+        { key: "/gallery.html", value: "GALERIA" },
+        { key: "/contact.html", value: "CONTATO" },
+      ]
+      const currentPathName = window.location.pathname
+      const currentPageData = defaultPaths.find((defaultPathName) => defaultPathName.key === currentPathName)
+      const navBar = Array.from(document.getElementById("navBar").querySelectorAll("a"))
+      const currentNavItem = navBar.find((link) => link.innerText === currentPageData.value)
+      currentNavItem.classList.remove("hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
+      currentNavItem.classList.add("bg-[var(--green-loud)]", "text-[black]", "hover:bg-[transparent]", "hover:border-[var(--green-loud)]", "hover:text-[var(--green-loud)]")
+    </script>
   </body>
 </html>
